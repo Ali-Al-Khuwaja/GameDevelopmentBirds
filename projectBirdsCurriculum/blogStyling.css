@@ -3,18 +3,41 @@
     --white-text: #FFFFFF;
     --bg-white: #FFFFFF;
     --bg-black: #1B1F23;
+    --black-line: #2B2F33;
     color: var(--white-text);
     background-color: var(--bg-black);
     font-family: 'Rubik', sans-serif, system-ui;
-    font-size: 16px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem !important;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    line-height: 2rem;
 }
 h1{
     font-weight: 700;
 }
-h2{
-    font-weight: 400;
-    margin: 0;
+img{
+    border-radius: 13px;
+}
+.title{
+    font-weight: 700;
+    font-size: 4rem !important;
+    margin-bottom: 0.90rem !important;
+    margin-top: 0.90rem !important; 
+    /* hmmm normalize.css is pressing my buttons */
+}
+.sub-title{
+    font-weight: 300;
     font-size: 1.50rem;
+    margin-top: 0.75rem !important;
 }
 #logo{
     height: auto;
@@ -27,11 +50,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
-    border-bottom: 1px solid grey;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: 0.5px solid var(--black-line);
 }
-
 nav > .right-nav-side > ul{
     flex-grow: 2;
 }
@@ -55,29 +77,18 @@ nav > div > ul{
     padding: 0;
     font-weight: 500;
 }
-.canvas-wide-img{
-    width: 100%;
-/*  width:100vw; chrome doesn't like this ,but firefox does like it,
-    thank god there is a solution that doesn't take an hour to find  */
-    height: 90vh;
-}
-.welcome-title-container{
-    position: relative;
-    width: 100%;
-    height: 90vh;
-}
-.centered-text-over-img{
-    position: absolute;
+/* Blog selectors */
+.blog-title-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.50rem;
-    text-align: center;    
+}
+.blog-bg{
+    border-radius: 20px;
+    width: 70rem;
+    height: 25rem;
+    margin: 0;
 }
 
 
