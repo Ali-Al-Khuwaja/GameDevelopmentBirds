@@ -60,6 +60,7 @@ nav > div > ul{
 /*  width:100vw; chrome doesn't like this ,but firefox does like it,
     thank god there is a solution that doesn't take an hour to find  */
     height: 90vh;
+    object-fit: cover;
 }
 .welcome-title-container{
     position: relative;
