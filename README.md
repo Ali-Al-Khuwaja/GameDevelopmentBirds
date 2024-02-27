@@ -1,5 +1,9 @@
 # projectBirds
-projectBirds is an online platform to learn and share Game development knowledge and resources
+projectBirds is a free online collective platform that aims to share , translate and blog Game development knowledge and to share free resources for game developer to learn  
+# LICENSE
+This project is under the mit license  
+<img src="https://www.svgrepo.com/show/444064/legal-license-mit.svg" width="200px" height="auto"> 
+
 # Art by logturanl , huge thanks to the artist
 <a href="https://www.freepik.com/free-vector/grass-gradient-illustration-flat-design_35668294.htm#&position=4&from_view=author&uuid=4eb20043-2f96-4cf8-9cbb-7f1aa27f2886">Image by logturnal</a> on Freepik
 
