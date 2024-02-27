@@ -42,7 +42,7 @@ nav{
     padding: 0%;
     color: var(--white-text);
 }
-nav > div > ul{
+nav > div > ul, ul{
     display: flex;
     justify-content: center;
     align-items: center;
