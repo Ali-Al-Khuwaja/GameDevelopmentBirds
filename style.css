@@ -9,6 +9,10 @@
 }
 h1{
     font-weight: 700;
+    
+}
+.centered-text-over-img > h1 {
+    font-size: 4rem;
 }
 h2{
     font-weight: 400;
