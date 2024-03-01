@@ -22,7 +22,6 @@ h2{
 #logo{
     height: auto;
     width: 3.7rem;
-    object-fit: contain;
     padding-top: 10px;
     padding-bottom: 10px;
 }

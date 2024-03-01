@@ -11,7 +11,6 @@
 #logo{
     height: auto;
     width: 3.7rem;
-    object-fit: contain;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -23,9 +22,9 @@ nav{
     padding-right: 5rem;
     border-bottom: 0.5px solid var(--black-line);
 }
-nav > .right-nav-side > ul{
+/* nav > .right-nav-side > ul{
     flex-grow: 2;
-}
+} */
 /* .left-nav-side{
 
 } */
@@ -39,7 +38,7 @@ nav > div > ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 1.2rem;
     text-decoration: none;
     list-style-type: none;
     margin: 0;
