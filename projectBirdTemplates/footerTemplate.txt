@@ -1,0 +1,17 @@
+<footer>
+    <br>
+    <ul>
+        <a href="" class="minimal-anchors"><li>عنا</li></a>
+        <a href="" class="minimal-anchors"><li>تواصل معنا</li></a>
+        <a href="" class="minimal-anchors"><li>الاسئلة المتكررة</li></a>
+        <a href="" class="minimal-anchors"><li>صفحة الاسناد</li></a>
+    </ul>
+    <br>
+    <hr>
+    <div class="legalStuff">
+        <p>جميع الحقوق محفوظة تحت رخصة MIT</p>
+        <div>
+            <a href="https://opensource.org/license/mit"><img src="assets/legal-license-mit-light.svg" alt="MIT-logo"></a>
+        </div>
+    </div>
+</footer>
