@@ -16,15 +16,19 @@ article{
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-left: 15rem;
-    margin-right: 15rem;
+    margin-left: max(3rem , 15%);;
+    margin-right: max(3rem , 15%);;
     line-height: 2rem;
 }
 h1{
     font-weight: 700;
 }
-img{
+iframe{
+    border-radius: 13px;   
+}
+article > img{
     border-radius: 13px;
+    margin-bottom: 13px;
 }
 .title{
     font-weight: 800;
@@ -65,7 +69,7 @@ nav{
     padding: 0%;
     color: var(--white-text);
 }
-nav > div > ul{
+nav > div > ul , footer > ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,4 +122,37 @@ video{
 }
 footer{
     margin: 1rem;
+}
+.green{
+    color: #82B95A;
+}
+.alert{
+    display: block;
+    border: 2px solid #c2b500;
+    border-radius: 13px;
+    background-color: #23211b;
+    color: #c2b500;
+    padding: 1rem;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 2px solid var(--black-line);
+    border-radius: 13px;
+    background-color: #23282b;
+    width: 15rem;
+    text-align: center;
+}
+
+.cardLogo{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    height: 75px;
+    width: auto;
+    padding: 0.5rem;
+}
+.cardTitle{
+    grid-column: 0/1;
+    grid-row: 2/3;
 }
