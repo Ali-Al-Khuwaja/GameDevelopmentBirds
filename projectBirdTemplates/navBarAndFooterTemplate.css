@@ -45,3 +45,30 @@ nav > div > ul{
     padding: 0;
     font-weight: 500;
 }
+/* footer */
+.legalStuff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.legalStuff > p {
+    margin: 0;
+    font-weight: 500;
+}
+.legalStuff > div > a > img {
+    height:50px;
+    width: auto;
+}
+.legalStuff > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer{
+    margin: 1rem;
+}
