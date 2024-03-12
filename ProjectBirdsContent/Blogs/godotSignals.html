@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إشعارات محرك Godot</title>
+    <link rel="stylesheet" href="godotSignals.css">
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css">
+    <link rel="icon" href="/assets/greenBirdTitle.png" type="image/icon type">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- This part is for the navigation bar-->
+        <nav>
+            <div class="left-nav-side">
+                <ul>
+                    <li><img src="/assets/greenBird.png" alt="project birds logo" id="logo"></li>
+                    <li><a href="/index.html" class="minimal-anchors">مشروع طيور</a></li>
+                </ul>
+            </div>
+            <div class="right-nav-side">
+                <ul>
+                    <li><a href="/ProjectBirdsContent/whatIsProjectBirds.html" class="minimal-anchors">ما هو مشروع طيور</a></li>
+                    <li><a href="/ProjectBirdsContent/attributionPage.html" class="minimal-anchors">صفحة الإسناد</a></li>
+                    <li><a href="/ProjectBirdsContent/aboutProjectBirds.html" class="minimal-anchors">المدونة</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- THis part is for the introduction title -->
+        <div class="blog-title-container" dir="rtl">
+            <h1 class="title">فهم نظام إشعارات محرك Godot</h1>
+            <h2 class="subtitle">شرح كيفية استخدام الاشعارت  بشكل عميق</h2>
+            <img src="/assets/33778122_6ccc.png" alt="main background" class="blog-bg">
+        </div>
+    </header>
+    <main>
+        <article dir="rtl">
+            <h1>الإشعارات , الإشارات , التنبيهات , كلانا نعرف أنا نتحدث عن signals</h1>
+            <p>إشعارات محرك Godot تعتبر من أهم من أهم الادوات التي ستستعملها في لعبتك فلهذا لن نمر مرور الكرام بل سنخوض في تفاصيل هذه الاداة العظيمة.</p>
+            <p class="rakkas-regular">همم ما الصعب في فهم الإشعارات , إنها سهلة للغاية ... إلا إذا ... أكمل أكمل </p>
+            <iframe src="https://giphy.com/embed/q8D9QLNzIUA2loyzMX" width="150rem" height="150rem" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <p><a href="https://giphy.com/gifs/black-cat-ash-the-confused-q8D9QLNzIUA2loyzMX">via GIPHY</a></p>
+            <p>في البداية دعنا نراجع نظام الاشعارات عن طريق مثال </p>
+            <iframe width="auto" height="515" src="https://www.youtube.com/embed/18DGOccXmW8?si=lKUu3lCm6Fvgttxd&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>الان بت تتذكر؟ ها؟ , لعلك تتسأل لماذا ربطت الاشعار بصفحة برمجة الخاصة بالعقدة الاب و ليس بصفحة البرمجة الخاصة بعقدة اللاعب التي إنشئتها في شجر المشاهد الحالية ؟, ففي نهاية الامر هذه هي شجرة مشاهد المرحلة التي نراها أمامنا, الجواب هو لاني أريد ربط الاشعار فقط في هذه المرحلة-level , من الجيد أن تقوم بفصل المشاهد عن بعضها قم نرتبها عند إنشاء شجرة مشاهد جديدة لتكوين مرحلة-level .</p>
+            <p> مثال اخر عن استخدام الاشعارات في محرك Godot</p>
+            <iframe width="auto" height="515" src="https://www.youtube.com/embed/8AU7Fg0m6ao?si=emTj_Dcw3cpYPPsM&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>الخلاصة هي أنك تستطيع استخدام بعض الدوال المعدة مسبقاً للاشعارات  ولكن ماذا لو أردت الوصول لدوال اشعارات عقد خارج شجرة المشاهد الحالية الخاصة بالمرحلة-level  الحالية ؟</p>
+            <iframe src="https://giphy.com/embed/st8Wfzji7jm146Ru7p" width="150rem" height="150rem" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/cat-excited-aaa-st8Wfzji7jm146Ru7p">via GIPHY</a></p>
+            <p class="rakkas-regular">وه , نستطيع فعل ذلك ؟</p>
+            <p>هل تتذكر عندما أخبرتك عن كيف هي عادة سيئة لترتيب مشروعك إذا قمت بوضع برمجة عقدة ما كامنة في شجرة مشاهد مرحلة ما في صفحة برمجة تلك العقدة بدل من صفحة برمجة الخاصة بالمرحلة ؟ , لنفترض أنك اتبعت النصيحة و بدأت بالانتباه لكيفية ترتيب مشروعك بدل أن تضع كل شئ في شجرة مشهد مرحلة واحدة وتجنبت اللطم عند البدء بتطوير شجرة مشاهد لمرحلة جديدة  , وأردت أن تربط اشعار من عقدة اضفتها لمشهد مرحلتك,لكن لم تعرف كيف تربطها , لا تقلق سأريك كيف  </p>
+            <iframe width="auto" height="515" src="https://www.youtube.com/embed/dNid2QJ1AbA?si=LEvileSNmVvhlIth&rel=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p> الفكرة هي أنك ستقوم باشعار اشعار اخر لكي يقوم بوظيفة ما في مكان ما </p>
+        </article>
+    </main>
+    <footer>
+        <br>
+        <ul>
+            <a href="" class="minimal-anchors"><li>عنا</li></a>
+            <a href="" class="minimal-anchors"><li>تواصل معنا</li></a>
+            <a href="" class="minimal-anchors"><li>الاسئلة المتكررة</li></a>
+            <a href="" class="minimal-anchors"><li>صفحة الاسناد</li></a>
+        </ul>
+        <br>
+        <hr>
+        <div class="legalStuff">
+            <p>جميع الحقوق محفوظة تحت رخصة MIT</p>
+            <div>
+                <a href="https://opensource.org/license/mit"><img src="/assets/legal-license-mit-light.svg" alt="MIT-logo"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
