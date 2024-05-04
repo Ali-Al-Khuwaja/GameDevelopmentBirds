@@ -111,8 +111,9 @@ video{
     font-weight: 500;
 }
 .legalStuff > div > a > img {
-    height:50px;
+    height:40px;
     width: auto;
+    border-radius: 5px;
 }
 .legalStuff > div {
     display: flex;
@@ -124,7 +125,7 @@ video{
 footer{
     margin: 1rem;
 }
-.green{
+.green , a{
     color: #82B95A;
 }
 .alert{
