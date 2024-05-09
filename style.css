@@ -3,21 +3,49 @@
     --white-text: #FFFFFF;
     --bg-white: #FFFFFF;
     --bg-black: #1B1F23;
+    --black-line: #2B2F33;
     color: var(--white-text);
     background-color: var(--bg-black);
     font-family: 'Rubik', sans-serif, system-ui;
 }
+ ::-webkit-scrollbar {
+     width: 10px;
+ }
+
+::-webkit-scrollbar-track {
+    background: var(--black-line);
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+ }
+
+ ::-webkit-scrollbar-thumb {
+     -webkit-border-radius: 5px;
+     border-radius: 5px;
+     background-color: rgb(100, 100, 100);
+
+}
+#blog{
+    background-color: #82B95A;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: var(--bg-black);
+} 
 h1{
     font-weight: 700;
     
 }
 .centered-text-over-img > h1 {
     font-size: 4rem;
+    text-shadow: 0px 15px 5px rgba(0,0,0,0.1),
+                 10px 20px 5px rgba(0,0,0,0.05),
+                 -10px 20px 5px rgba(0,0,0,0.05);
 }
 h2{
     font-weight: 400;
     margin: 0;
     font-size: 1.50rem;
+    
 }
 #logo{
     height: auto;
@@ -32,7 +60,28 @@ nav{
     padding-left: 5rem;
     padding-right: 5rem;
     border-bottom: 0.5px solid var(--black-line);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--bg-black);
 }
+@media only screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left-nav-side > ul > li > a {
+        display: none;
+        visibility: hidden;
+    }
+    .right-nav-side> ul{
+        gap: 10px;
+        justify-content: start;
+    }
+  }
 /* nav > .right-nav-side > ul{
     flex-grow: 2;
 } */
@@ -63,10 +112,12 @@ nav > div > ul, ul{
     height: 90vh;
     object-fit: cover;
 }
+
 .welcome-title-container{
     position: relative;
     width: 100%;
     height: 90vh;
+    margin-top: 70px;
 }
 .centered-text-over-img{
     position: absolute;
@@ -95,7 +146,7 @@ nav > div > ul, ul{
     font-weight: 500;
 }
 .legalStuff > div > a > img {
-    height:50px;
+    height:40px;
     width: auto;
 }
 .legalStuff > div {
@@ -108,46 +159,34 @@ nav > div > ul, ul{
 footer{
     margin: 1rem;
 }
-/* burger menu  */
- /* Style the navigation menu */
- .topnav {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-  
-  /* Hide the links inside the navigation menu (except for logo/home) */
-  .topnav #myLinks {
-    display: none;
-  }
-  
-  /* Style navigation menu links */
-  .topnav a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-  /* Style the hamburger menu */
-  .topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  /* Style the active link (or home/logo) */
-  .active {
-    background-color: #04AA6D;
-    color: white;
-  } 
+.solutions{
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
 
+}  
+.showcase-card{
+    border: 2px solid var(--black-line);
+    border-radius: 13px;
+    width: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #23282b;
+    padding: 1rem;
+    box-sizing: border-box;
+    line-height: 1.5;
+    text-align: center;
+}
+.showcase-card > img{
+    height: 5rem;
+    width: auto;
+}
+.showcase-card > h1 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
