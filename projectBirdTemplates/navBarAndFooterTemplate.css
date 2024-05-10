@@ -8,7 +8,30 @@
     background-color: var(--bg-black);
     font-family: 'Rubik', sans-serif, system-ui;
 }
-#logo{
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+   background: var(--black-line);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(100, 100, 100);
+
+}
+#blog{
+    background-color: #82B95A;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: var(--bg-black);
+} 
+.logo{
     height: auto;
     width: 3.7rem;
     padding-top: 10px;
@@ -21,6 +44,27 @@ nav{
     padding-left: 5rem;
     padding-right: 5rem;
     border-bottom: 0.5px solid var(--black-line);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--bg-black);
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left-nav-side > ul > li > a {
+        display: none;
+        visibility: hidden;
+    }
+    .right-nav-side> ul{
+        gap: 10px;
+        justify-content: start;
+    }
 }
 /* nav > .right-nav-side > ul{
     flex-grow: 2;
@@ -34,7 +78,7 @@ nav{
     padding: 0%;
     color: var(--white-text);
 }
-nav > div > ul{
+nav > div > ul, ul{
     display: flex;
     justify-content: center;
     align-items: center;
