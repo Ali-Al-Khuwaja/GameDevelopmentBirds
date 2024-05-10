@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   fill="none"
+   height="24"
+   viewBox="0 0 24 24"
+   width="24"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="emoji-happy.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="19.916667"
+     inkscape:cx="0.32635983"
+     inkscape:cy="12"
+     inkscape:window-width="1366"
+     inkscape:window-height="726"
+     inkscape:window-x="0"
+     inkscape:window-y="42"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     clip-rule="evenodd"
+     d="m2 12c0-5.52285 4.47715-10 10-10 5.5228 0 10 4.47715 10 10 0 5.5228-4.4772 10-10 10-5.52285 0-10-4.4772-10-10zm7.00006-3c.55228 0 1.00004.44772 1.00004 1v.0112c0 .5523-.44776 1-1.00004 1-.55229 0-1-.4477-1-1v-.0112c0-.55228.44771-1 1-1zm-1.60058 4.2004c.44159-.3317 1.06845-.2426 1.40014.199.73146.9738 1.89278 1.6006 3.20078 1.6006s2.4694-.6268 3.2008-1.6006c.3317-.4416.9586-.5307 1.4002-.199s.5306.9586.199 1.4002c-1.093 1.4551-2.8363 2.3994-4.8 2.3994-1.9636 0-3.70696-.9443-4.79991-2.3994-.33169-.4416-.2426-1.0685.19899-1.4002zm8.60062-3.2004c0-.55228-.4478-1-1-1-.5523 0-1 .44772-1 1v.0112c0 .5523.4477 1 1 1 .5522 0 1-.4477 1-1z"
+     fill="#323232"
+     fill-rule="evenodd"
+     id="path2"
+     style="fill:#ffffff" />
+</svg>
