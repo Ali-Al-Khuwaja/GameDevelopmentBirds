@@ -3,6 +3,8 @@ projectBirds is a free online collective platform that aims to share , translate
 >This project is not ready to be public , i'm forced to make it public and can not make it private due to the following reasons :
 >
 >my account is based in a U.S.-sanctioned region (crimea - Qırım - القرم). As a result, Github is unable to provide private repository services and paid services for my account. GitHub has preserved, however, my access to certain free services for public repositories. 
+>
+> knowing this , you should not expect any service to be active form this project until further notice . 
 
 # Art by logturanl , huge thanks to the artist
 <a href="https://www.freepik.com/free-vector/grass-gradient-illustration-flat-design_35668294.htm#&position=4&from_view=author&uuid=4eb20043-2f96-4cf8-9cbb-7f1aa27f2886">Image by logturnal</a> on Freepik
