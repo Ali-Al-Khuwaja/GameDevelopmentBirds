@@ -1,13 +1,18 @@
+/* I know , I got the pages.css , why not just use it  instead , i will merge them later don't worry */
 :root {
   --black-text: #303030;
   --white-text: #ffffff;
   --bg-white: #ffffff;
   --bg-black: #1b1f23;
   --black-line: #2b2f33;
+  --card-bg: #23282b;
+  --green: #82b95a;
   color: var(--white-text);
   background-color: var(--bg-black);
   font-family: "Rubik", sans-serif, system-ui;
 }
+
+/* custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -23,32 +28,53 @@
   border-radius: 5px;
   background-color: rgb(100, 100, 100);
 }
-#blog {
-  background-color: #82b95a;
-  border-radius: 5px;
-  padding: 5px;
-  box-sizing: border-box;
+
+/* page title animation */
+.slide-top {
+  animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* custom styling  */
+.greenButton>a {
   color: var(--bg-black);
 }
+
+.greenButton {
+  background-color: var(--green) !important;
+  border-radius: 5px !important;
+  padding: 5px 10px 5px 10px !important;
+  box-sizing: border-box !important;
+  color: var(--bg-black) !important;
+  border-style: none;
+}
+
 h1 {
   font-weight: 700;
 }
-.centered-text-over-img > h1 {
-  font-size: 4rem;
-  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
-    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
-}
+
 h2 {
   font-weight: 400;
   margin: 0;
   font-size: 1.5rem;
 }
+
 .logo {
   height: auto;
   width: 3.7rem;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -63,21 +89,59 @@ nav {
   width: 100%;
   background-color: var(--bg-black);
 }
+
 @media only screen and (max-width: 600px) {
   nav {
     justify-content: center;
     padding-left: 0;
     padding-right: 0;
   }
-  .left-nav-side > ul > li > a {
+
+  .left-nav-side>ul>li:nth-child(2) {
     display: none;
     visibility: hidden;
   }
-  .right-nav-side > ul {
+
+  .right-nav-side>ul {
     gap: 10px;
     justify-content: start;
   }
+
+  .centered-text-over-img>h1 {
+    font-size: 3rem !important;
+  }
+
+  .centered-text-over-img-blog>h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .hide {
+    display: none;
+    visibility: hidden;
+  }
+
+  .narrowTextBox {
+    width: 100% !important;
+  }
+
+  .flexDiv {
+    justify-content: center !important;
+  }
+
+  nav {
+    font-size: medium !important;
+  }
+
+  .teamMembers>img {
+    width: 100px !important;
+  }
 }
+
+button:hover,
+.right-nav-side>ul :nth-child(3):hover {
+  box-shadow: 0px 0px 15px 0px #ffffff5e;
+}
+
 /* nav > .right-nav-side > ul{
     flex-grow: 2;
 } */
@@ -90,7 +154,8 @@ nav {
   padding: 0%;
   color: var(--white-text);
 }
-nav > div > ul,
+
+nav>div>ul,
 ul {
   display: flex;
   justify-content: center;
@@ -102,6 +167,7 @@ ul {
   padding: 0;
   font-weight: 500;
 }
+
 .canvas-wide-img {
   width: 100%;
   /*  width:100vw; chrome doesn't like this ,but firefox does like it,
@@ -116,6 +182,7 @@ ul {
   height: 90vh;
   margin-top: 70px;
 }
+
 .centered-text-over-img {
   position: absolute;
   display: flex;
@@ -128,7 +195,118 @@ ul {
   transform: translate(-50%, -50%);
   font-size: 1.5rem;
   text-align: center;
+  gap: 20px;
 }
+
+.CTA {
+  cursor: pointer;
+  font-weight: 550 !important;
+}
+
+.centered-text-over-img>h1 {
+  font-size: 4rem;
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  margin-bottom: 0;
+}
+
+/* blog page css */
+.main-blog {
+  margin-top: 70px;
+}
+
+.welcome-title-container-blog {
+  position: relative;
+}
+
+.centered-text-over-img-blog {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+    10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.blogPostCard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.blogBG-one {
+  background: #FDC830;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F37335, #FDC830);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F37335, #FDC830);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blogBG-two {
+  background: hsla(225, 40%, 54%, 1);
+
+  background: linear-gradient(90deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(225, 40%, 54%, 1) 0%, hsla(284, 75%, 54%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#5C73B9", endColorstr="#B330E1", GradientType=1);
+}
+
+.blogBG-there {
+  background: hsla(59, 86%, 68%, 1);
+
+  background: linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(59, 86%, 68%, 1) 0%, hsla(134, 36%, 53%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F4F269", endColorstr="#5CB270", GradientType=1);
+}
+
+.blogBG-four {
+  background: hsla(303, 79%, 76%, 1);
+
+  background: linear-gradient(90deg, hsla(303, 79%, 76%, 1) 0%, hsla(360, 86%, 67%, 1) 100%);
+
+  background: -moz-linear-gradient(90deg, hsla(303, 79%, 76%, 1) 0%, hsla(360, 86%, 67%, 1) 100%);
+
+  background: -webkit-linear-gradient(90deg, hsla(303, 79%, 76%, 1) 0%, hsla(360, 86%, 67%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F292ED", endColorstr="#F36364", GradientType=1);
+}
+
+.blog-posts {
+  display: flex;
+  gap: 10px;
+}
+
+.blogThumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 200px;
+  border-radius: 13px;
+  box-sizing: border-box;
+  /* padding: 20px; */
+}
+
+.fit-svg {
+  height: 75%;
+  width: auto;
+}
+
 /* footer */
 .legalStuff {
   display: flex;
@@ -139,24 +317,31 @@ ul {
   margin-top: 1rem;
   text-align: center;
 }
-.legalStuff > p {
+
+.legalStuff>p {
   margin: 0;
   font-weight: 500;
+  line-height: 1.6;
 }
-.legalStuff > div > a > img {
+
+.legalStuff>div>a>img {
   height: 40px;
   width: auto;
 }
-.legalStuff > div {
+
+.legalStuff>div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
+
 footer {
   margin: 1rem;
+  text-align: center;
 }
+
 .solutions {
   display: flex;
   gap: 1rem;
@@ -164,6 +349,7 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .showcase-card {
   border: 2px solid var(--black-line);
   border-radius: 13px;
@@ -173,7 +359,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #23282b;
+  background-color: var(--card-bg);
   padding: 1rem;
   box-sizing: border-box;
   line-height: 1.5;
@@ -181,11 +367,84 @@ footer {
   box-shadow: 0px 0px 6.7px rgba(0, 0, 0, 0.081),
     0px 0px 22.3px rgba(0, 0, 0, 0.119), 0px 0px 100px rgba(0, 0, 0, 0.2);
 }
-.showcase-card > img {
+
+.showcase-card>img {
   height: 5rem;
   width: auto;
 }
-.showcase-card > h1 {
+
+.showcase-card>h1 {
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+/* FAQ page vitals css selectors*/
+.text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: max(3rem, 15%);
+  margin-right: max(3rem, 15%);
+  line-height: 2rem;
+}
+
+.accordion {
+  border-radius: 13px;
+  border: 2px solid var(--black-line);
+  background-color: var(--card-bg);
+  padding: 1rem;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 6.7px rgba(0, 0, 0, 0.081),
+    0px 0px 22.3px rgba(0, 0, 0, 0.119), 0px 0px 100px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
+
+.flexDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.narrowTextBox {
+  width: 50%;
+  text-align: start;
+  text-wrap: wrap;
+}
+
+/* attribution vitals */
+.center-content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.teamMembers>img {
+  border-radius: 50%;
+  height: auto;
+  width: 150px;
+}
+
+.teamMembers>h1 {
+  margin-bottom: 0;
+}
+
+.teamMembers {
+  min-width: 190px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--black-line);
+  border-radius: 13px;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
