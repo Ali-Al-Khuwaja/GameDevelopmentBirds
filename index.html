@@ -1,93 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>مشروع طيور</title>
-    <link rel="icon" href="assets/greenBirdTitle.png" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <!-- This part is for the navigation bar-->
-      <nav>
-        <div class="left-nav-side">
-          <ul>
-            <li>
-              <a href="../index.html">
-                <img
-                  src="/assets/greenBird.png"
-                  alt="project birds logo"
-                  class="logo"
-                />
-              </a>
-            </li>
-            <li>
-              <a href="index.html" class="minimal-anchors">مشروع طيور</a>
-            </li>
-          </ul>
-        </div>
-        <div class="right-nav-side">
-          <ul>
-            <li>
-              <a href="/src/aboutUs.html" class="minimal-anchors"
-                >معلومات عنا
-              </a>
-            </li>
-            <li>
-              <a href="src/attributionPage.html" class="minimal-anchors"
-                >صفحة الإسناد</a
-              >
-            </li>
-            <li>
-              <a href="src/blogs.html" class="minimal-anchors" id="blog"
-                >التدوينات</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <!-- THis part is for the introduction title -->
-      <div class="welcome-title-container">
-        <img
-          src="assets/Waves.webp"
-          alt="main background"
-          class="canvas-wide-img"
-        />
-        <div class="centered-text-over-img" dir="rtl">
-          <h1>المدونة الإلكترونية لتطوير الألعاب التي طالما انتظرتها.</h1>
-          <h2>كتبت بطريقة صديقة للمبتدئين</h2>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مشروع طيور</title>
+  <!-- css files , it's a blogging project , why use js ? -->
+  <link rel="icon" href="assets/Icons and backgrounds/greenBirdTitle.webp" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="/node_modules/modern-normalize/modern-normalize.css" />
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <!-- This part is for the navigation bar-->
+    <nav>
+      <div class="left-nav-side">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <img src="/assets/Icons and backgrounds/greenBird.webp" alt="project birds logo" class="logo" />
+            </a>
+          </li>
+          <li>
+            <a href="index.html" class="minimal-anchors">مشروع طيور</a>
+          </li>
+        </ul>
       </div>
-    </header>
-    <main>
-      <section class="solutions">
+      <div class="right-nav-side">
+        <ul>
+          <li>
+            <a href="#FAQ" class="minimal-anchors">الأسئلة المتكررة
+            </a>
+          </li>
+          <li>
+            <a href="#contactUs" class="minimal-anchors">التواصل معنا</a>
+          </li>
+          <li>
+            <a href="src/blogs.html" class="minimal-anchors greenButton">التدوينات</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- THis part is for the introduction title -->
+    <div class="welcome-title-container">
+      <img src="assets/Icons and backgrounds/Waves.webp" alt="main background" class="canvas-wide-img" />
+      <div class="centered-text-over-img" dir="rtl">
+        <h1 class="slide-top">
+          المدونة الإلكترونية لتطوير الألعاب التي طالما انتظرتها.
+        </h1>
+        <h2 class="slide-top">كتبت بطريقة صديقة للمبتدئين</h2>
+        <button class="greenButton slide-top CTA">التدوينات</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- FEATURES SECTION IS HERE -->
+    <section>
+      <h1 class="center">المُمَيِّزات.</h1>
+      <div class="solutions">
         <div class="showcase-card">
-          <img src="assets/emoji-happy.svg" alt="free" />
+          <img src="assets/Icons and backgrounds/emoji-happy.svg" alt="free" />
           <h1>مَجّانيّ</h1>
           <p>
-            مشروع طيور يطمح لتوفير محتوى تعليمي لتطوير الألعاب بشكل مجاني للجميع
-            .
+            مشروع طيور يطمح لتوفير محتوى تعليمي لتطوير الألعاب بشكل مجاني
+            للجميع .
           </p>
         </div>
         <div class="showcase-card">
-          <img src="assets/academic-cap (1).svg" alt="simple" />
+          <img src="assets/Icons and backgrounds/academic-cap.svg" alt="simple" />
           <h1>بَسيط</h1>
           <p>شروحات بسيطة مع أمثلة عملية لفهم أفضل وروابط لمصادر خارجية .</p>
         </div>
         <div class="showcase-card">
-          <img src="assets/github.svg" alt="collaboration" />
+          <img src="assets/Icons and backgrounds/github.svg" alt="collaboration" />
           <h1>تَعاوَنَ</h1>
           <p>
             المشروع يطمح ليكون مدونة لمشاركة المعرفة عن مجال تطوير الألعاب
@@ -95,42 +87,100 @@
           </p>
         </div>
         <div class="showcase-card">
-          <img src="assets/users.svg" alt="community" />
+          <img src="assets/Icons and backgrounds/users.svg" alt="community" />
           <h1>جَماعيّ</h1>
           <p>
             جمع وتوحيد مطورين الألعاب مع بعضهم البعض لمساعدة المطور العربي .
           </p>
         </div>
-      </section>
-    </main>
-    <footer>
-      <br />
-      <ul>
-        <a href="src/aboutUs.html" class="minimal-anchors"
-          ><li>معلومات عنا</li></a
-        >
-        <a href="src/contactUs.html" class="minimal-anchors"
-          ><li>تواصل معنا</li></a
-        >
-        <a href="src/FAQ.html" class="minimal-anchors"
-          ><li>الأسئلة المتكررة</li></a
-        >
-        <a href="src/attributionPage.html" class="minimal-anchors"
-          ><li>صفحة الاسناد</li></a
-        >
-      </ul>
-      <br />
-      <hr />
-      <div class="legalStuff">
-        <p>
-          هذا العمل يخضع تحت رخصة الإسناد-غير تجاري-المشاركة بالمثل 4.0 الدولية
-        </p>
-        <div>
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"
-            ><img src="/assets/by-nc-sa.svg" alt="cc-logo"
-          /></a>
-        </div>
       </div>
-    </footer>
-  </body>
+    </section>
+    <!-- FAQ SECTION IS HERE  -->
+    <section class="text-content" id="FAQ">
+      <h1 class="center">الأسئِلَةُ المُتَكَرِّرَةُ</h1>
+      <details class="accordion">
+        <summary>ما هو مشروع طيور ؟</summary>
+        <p>
+          مشروع طيور هو عبارة عن منصة جماعية مجانية عبر الإنترنت تهدف إلى
+          مشاركة المعرفة المتعلقة بتطوير الألعاب وترجمتها وتدوينها ومشاركة
+          الموارد المجانية ليتعلمها مطورو الألعاب
+        </p>
+      </details>
+      <details class="accordion">
+        <summary>من الفئة المستهدفة في مشروع طيور ؟</summary>
+        <p>
+          مطورو الإلعاب العرب الذين يودون بتطوير مهاراتهم في المجال , خاصةً
+          الجدد
+        </p>
+      </details>
+      <details class="accordion">
+        <summary>كيف يمكنني المساهمة في تحسين محتوى مشروع طيور ؟</summary>
+        <p>
+          يمكنك كتابة مدونات ومشاركتها على المدونة تحت اسمك ,نحن نقدم مميزات
+          للكتاب الجدد, أين ؟ إما عن طريق Github أو عن طريق مشاركة ملف على
+          google docs , أيضاً بإمكانك المساهمة عن طريق مشاركة المدونة على منصة
+          إكس أو فيسبوك أو يوتيوب أو ما شابه
+        </p>
+      </details>
+      <details class="accordion">
+        <summary>
+          هل هذه المنصة تنافس منصات عربية أخرى لتعليم الألعاب ؟ , كمثال
+          كينماتيك ؟
+        </summary>
+        <p>
+          لا, مشروع طيور باختصار منصة تجميع وتدوين وترجمة محتوى تعليمي بهدف
+          مشاركة العلم .
+        </p>
+      </details>
+      <details class="accordion">
+        <summary>مجاني ! , ما هي الخدعة هنا ؟</summary>
+        <p>
+          الأمر بسيط , مشاركة المعرفة , أنا أشارك , انت القارئ تستفيد , أنت
+          تشارك , نحن القراء نستفيد . ･ᴗ･
+        </p>
+      </details>
+    </section>
+    <!-- THIS IS CONTACT US SECTION -->
+    <section class="text-content" id="contactUs">
+      <h1 class="center">التَّوَاصُلُ مَعَنا</h1>
+      <div class="flexDiv">
+        <div class="narrowTextBox">
+          <h1>للتواصل مع إدارة مشروع طيور</h1>
+          <p>
+            يمكنك إرسال بريد إلكتروني إلى ali.al.khuwaja@gmail.com أو إرسال
+            رسالة على ديسكورد , أنا متواجد على سيرفر SGN بإسم Ali El-Khawaja
+          </p>
+        </div>
+        <img src="assets/Icons and backgrounds/chat-3-fill-contact.svg" alt="التواصل مع مشروع طيور " height="200px"
+          width="auto" class="hide" />
+      </div>
+    </section>
+  </main>
+  <footer>
+    <br />
+    <ul>
+      <a href="#contactUs" class="minimal-anchors">
+        <li>تواصل معنا</li>
+      </a>
+      <a href="#FAQ" class="minimal-anchors">
+        <li>الأسئلة المتكررة</li>
+      </a>
+      <a href="src/attributionPage.html" class="minimal-anchors">
+        <li>صفحة الاسناد</li>
+      </a>
+    </ul>
+    <br />
+    <hr />
+    <div class="legalStuff">
+      <p>
+        هذا العمل يخضع تحت رخصة الإسناد-غير تجاري-المشاركة بالمثل 4.0 الدولية
+      </p>
+      <div>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en"><img
+            src="/assets/Icons and backgrounds/by-nc-sa.svg" alt="cc-logo" /></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
