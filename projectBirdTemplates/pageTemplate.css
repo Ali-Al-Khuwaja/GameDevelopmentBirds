@@ -1,0 +1,203 @@
+/* hi , This is a template for me when i want to add a new page , ignore it */
+:root {
+    --black-text: #303030;
+    --white-text: #ffffff;
+    --bg-white: #ffffff;
+    --bg-black: #1b1f23;
+    --black-line: #2b2f33;
+    --card-bg: #23282b;
+    --green: #82b95a;
+    color: var(--white-text);
+    background-color: var(--bg-black);
+    font-family: "Rubik", sans-serif, system-ui;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black-line);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: rgb(100, 100, 100);
+}
+
+/* page title animation */
+.slide-top {
+    animation: slide-top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(-100px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* navigation bar css */
+button:hover,
+.right-nav-side>ul :nth-child(3):hover {
+    box-shadow: 0px 0px 15px 0px #ffffff5e;
+}
+
+.greenButton {
+    background-color: var(--green) !important;
+    border-radius: 6px !important;
+    padding: 5px !important;
+    box-sizing: border-box !important;
+    color: var(--bg-black) !important;
+    border-style: none;
+}
+
+.greenButton>a {
+    color: var(--bg-black);
+}
+
+.logo {
+    height: auto;
+    width: 3.7rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-bottom: 0.5px solid var(--black-line);
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: var(--bg-black);
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .left-nav-side>ul:nth-child(2) {
+        display: none;
+        visibility: hidden;
+    }
+
+    .right-nav-side>ul {
+        gap: 10px;
+        justify-content: start;
+    }
+
+    .centered-text-over-img>h1 {
+        font-size: 3rem;
+    }
+}
+
+/* nav > .right-nav-side > ul{
+    flex-grow: 2;
+} */
+/* .left-nav-side{
+
+} */
+.minimal-anchors {
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    color: var(--white-text);
+}
+
+nav>div>ul,
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+/* main tag  ( content ) */
+main {
+    margin-top: 70px;
+}
+
+.welcome-title-container {
+    position: relative;
+}
+
+.centered-text-over-img {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    text-align: center;
+    text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
+        10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: max(3rem, 15%);
+    margin-right: max(3rem, 15%);
+    line-height: 2rem;
+}
+
+/* footer css selectors */
+.legalStuff {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.legalStuff>p {
+    margin: 0;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.legalStuff>div>a>img {
+    height: 40px;
+    width: auto;
+}
+
+.legalStuff>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer {
+    margin: 1rem;
+    text-align: center;
+}
