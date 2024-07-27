@@ -1,0 +1,311 @@
+:root {
+  --white-text: #ffffff;
+  --bg-white: #ffffff;
+  --bg-black: #1b1f23;
+  --black-line: #2b2f33;
+  --green: #82b95a;
+  color: var(--white-text);
+  background-color: var(--bg-black);
+  font-family: "Rubik", sans-serif, system-ui;
+}
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black-line);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: rgb(100, 100, 100);
+}
+
+/* mobile view css , please try to use projectBirds on the desktop as much as possible 👀 */
+@media only screen and (max-width: 600px) {
+  .title {
+    font-weight: 800;
+    font-size: 3rem !important;
+    margin-bottom: 0.9rem !important;
+    margin-top: 0.9rem !important;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-size: medium !important;
+  }
+
+  .left-nav-side>ul>li:nth-child(2) {
+    display: none;
+    visibility: hidden;
+  }
+
+  .right-nav-side>ul {
+    gap: 0px !important;
+    justify-content: start;
+  }
+
+  .blogPostBackground {
+    height: 200px !important;
+  }
+
+  .cardsContainer {
+    flex-direction: column !important;
+  }
+}
+
+/* button styling */
+.greenButton>a {
+  color: var(--bg-black);
+}
+
+.greenButton {
+  background-color: var(--green) !important;
+  border-radius: 5px !important;
+  padding: 5px 10px 5px 10px !important;
+  box-sizing: border-box !important;
+  color: var(--bg-black) !important;
+  border-style: none;
+}
+
+button:hover,
+.right-nav-side>ul :nth-child(3):hover {
+  box-shadow: 0px 0px 15px 0px #ffffff5e;
+}
+
+/* custom css */
+iframe {
+  border-radius: 13px;
+}
+
+p {
+  font-size: 1.1rem !important;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-left: max(3rem, 15%);
+  margin-right: max(3rem, 15%);
+  line-height: 2rem;
+  text-wrap: wrap;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+article>img {
+  border-radius: 13px;
+  margin-bottom: 13px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin-bottom: 0.9rem !important;
+  margin-top: 0.9rem !important;
+  text-align: center;
+  text-wrap: wrap;
+  /* hmm normalize.css is pressing my buttons */
+}
+
+.subTitle {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 0.75rem !important;
+  text-align: center;
+}
+
+/* navigation bar css */
+.logo {
+  height: auto;
+  width: 3.7rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  border-bottom: 0.5px solid var(--black-line);
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: var(--bg-black);
+  box-sizing: border-box;
+}
+
+nav>div>ul,
+footer>ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.minimal-anchors {
+  text-decoration: none;
+  margin: 0%;
+  padding: 0%;
+  color: var(--white-text);
+}
+
+/* Blog selectors */
+.blog-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.blogPostBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.fit-logo {
+  position: relative;
+  height: auto;
+  width: 20%;
+  z-index: 1;
+}
+
+.blog-cover-img {
+  background-size: cover;
+  background-position: center center;
+}
+
+/* footer */
+.legalStuff {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.legalStuff>p {
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.legalStuff>div>a>img {
+  height: 40px;
+  width: auto;
+  border-radius: 0px;
+}
+
+.legalStuff>div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer {
+  margin: 1rem;
+  text-align: center;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+img {
+  border-radius: 13px;
+}
+
+.cardLogo {
+  grid-column: 1/2;
+  grid-row: 1/4;
+  height: 75px;
+  width: auto;
+  padding: 0.5rem;
+}
+
+.cardTitle {
+  grid-column: 0/1;
+  grid-row: 2/3;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  border: 2px solid var(--black-line);
+  border-radius: 13px;
+  background-color: #23282b;
+  width: 15rem;
+  text-align: center;
+}
+
+.alert {
+  display: block;
+  border: 2px solid #c2b500;
+  border-radius: 13px;
+  background-color: #23211b;
+  color: #c2b500;
+  padding: 1rem;
+}
+
+code {
+  background-color: var(--black-line);
+  font-family: monospace;
+}
+
+.rakkas-regular {
+  font-family: "Rakkas", serif;
+  font-weight: 400;
+  font-size: 1.5rem !important;
+  font-style: normal;
+}
+
+a {
+  color: var(--green);
+}
+
+.limit-width {
+  width: 100%;
+  text-wrap: wrap;
+  overflow: auto;
+}
+
+.additional-resources>p>a {
+  color: var(--green);
+}
+
+.code {
+  overflow: auto;
+}
