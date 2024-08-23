@@ -37,7 +37,7 @@ If you have any questions or issues, feel free to reach out via email at [ali.al
 
 ## Forking and Future Development
 
-Yes , we do love the spirit of open-source collaboration and we welcome others to fork and build upon our blog, but the true reason why we stated this is open source project is only because the nature of our lives as Palestinians from Gaza strip , we are always under the threat of being killed by the hands of the occupier (il), so, for that reason, if we are unable to continue maintaining this project (aka dead ) or any other reasons we make while alive , you are free to take over its development.
+Yes , we do love the spirit of open-source collaboration and we welcome others to fork and build upon our blog, but the true reason why we stated this is an open source project is only because the nature of our lives as Palestinians from Gaza strip , we are always under the threat of being killed by the hands of the occupier (il), so, for that reason, if we are unable to continue maintaining this project (aka dead ) or any other reasons we make while alive , you are free to take over its development.
 
 This means that:
 
@@ -46,9 +46,5 @@ This means that:
 - You can distribute and share your versions of the blog under the same license (CC BY 4.0).
 
 We believe in the power of community, and we hope that our work can continue to benefit others even if we are no longer able to maintain it (being dead is an exmple).
-
----
-
-This section explicitly gives others the permission and encouragement to continue the project if you’re unable to do so (being dead is an exmple).
 
 ---
