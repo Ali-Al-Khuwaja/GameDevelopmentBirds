@@ -23,7 +23,7 @@ Welcome to **Game Development Birds (طيور تطوير الألعاب)**, a bl
 
 ## Contributing
 
-At the moment, we are facing issues with receiving donations nad even selling our future games. Therefore, while we appreciate any help in spreading the word about our blog, we are not yet accepting financial contributions. In the future, with better support, we plan to open the blog to more contributors and create even more content .
+At the moment, we are facing issues with receiving donations and even selling our future games. Therefore, while we appreciate any help in spreading the word about our blog, we are not yet accepting financial contributions. In the future, with better support, we plan to open the blog to more contributors and create even more content .
 
 ## License
 
