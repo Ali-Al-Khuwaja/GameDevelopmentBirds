@@ -33,8 +33,6 @@ This project is licensed under the **Creative Commons Attribution 4.0 Internatio
 
 If you have any questions or issues, feel free to reach out via email at [ali.al.khuwaja@gmail.com].
 
-To clearly state that others are allowed to fork and build upon your blog if you can no longer maintain it, you can add a section like this to your README:
-
 ---
 
 ## Forking and Future Development
