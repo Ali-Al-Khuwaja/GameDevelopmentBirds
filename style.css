@@ -127,12 +127,12 @@ nav {
   padding-right: 5rem;
   border-bottom: 0.5px solid var(--black-line);
   position: fixed;
-  overflow: hidden;
   top: 0;
   z-index: 2;
   width: 100%;
   background-color: var(--bg-black);
   box-sizing: border-box;
+  overflow: visible;
 }
 
 nav>div>ul,
@@ -155,22 +155,20 @@ ul {
   color: var(--white-text);
 }
 
-/* mobile view css , please try to use projectBirds on the desktop as much as possible 👀 */
+/* mobile view css , please try to use Game development birds on the desktop as much as possible 👀 */
 @media only screen and (max-width: 600px) {
   nav {
-    justify-content: center;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
   }
 
-  .left-nav-side>ul>li:nth-child(2) {
+  /* .left-nav-side>ul>li:nth-child(2) {
     display: none;
     visibility: hidden;
-  }
-
-  .right-nav-side>ul {
-    gap: 10px;
-    justify-content: start;
+  } */
+  .right-nav-side {
+    display: none;
+    visibility: hidden;
   }
 
   .centered-text-over-img>h1 {
@@ -206,6 +204,23 @@ ul {
   .blogThumbnail {
     height: 100px !important;
     width: 120px !important;
+  }
+
+  nav>div>ul,
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+
+  .burger-menu-icon {
+    display: block !important;
   }
 }
 
@@ -418,4 +433,69 @@ ul {
 footer {
   margin: 1rem;
   text-align: center;
+}
+
+.burger-menu-icon {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.burger-menu-icon span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #f3f3f3;
+  margin-bottom: 5px;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+
+/* Style the menu */
+.burger-menu {
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  background-color: var(--bg-black);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.burger-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger-menu li {
+  margin-bottom: 10px;
+}
+
+.burger-menu a {
+  text-decoration: none;
+  color: var(--white-text);
+}
+
+/* Show the menu on click */
+.burger-menu-icon.active span:nth-child(1) {
+  transform: rotate(50deg) translate(6px, 5px);
+}
+
+.burger-menu-icon.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu-icon.active span:nth-child(3) {
+  transform: rotate(-50deg) translate(6px, -5px);
+
+}
+
+.burger-menu.show {
+  display: block;
 }
