@@ -457,7 +457,7 @@ footer {
 .burger-menu {
   display: none;
   position: absolute;
-  top: 72px;
+  top: 70px;
   left: 0;
   background-color: var(--bg-black);
   padding: 20px;
