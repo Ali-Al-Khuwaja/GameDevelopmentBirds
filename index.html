@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8" name="type" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Primary Meta Tags -->
+  <title>طيور تطوير الألعاب : المدونة الإلكترونية لتطوير الألعاب</title>
+  <meta name="title" content="طيور تطوير الألعاب : المدونة الإلكترونية لتطوير الألعاب" />
   <meta name="description"
-    content="مشروع طيور هو عبارة عن منصة جماعية مجانية عبر الإنترنت تهدف إلى مشاركة المعرفة المتعلقة بتطوير الألعاب وترجمتها وتدوينها ومشاركة الموارد المجانية ليتعلمها مطورو الألعاب">
-  <title>مشروع طيور</title>
-  <!-- css files , it's a blogging project , why use js ? -->
+    content="طيور تطوير الألعاب هي منصة ننشر فيها مدونات حول جوانب مختلفة من تطوير الألعاب. مهمة المشروع هو إنشاء مادة مفيدة وسهلة الوصول لمطوري الألعاب الطموحين." />
   <link rel="icon" href="assets/Icons-and-backgrounds/greenBirdTitle.webp" type="image/png" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="src/normalize-css/modern-normalize.css" />
@@ -17,12 +18,27 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
+  <script src="nav.js" defer></script>
 </head>
 
 <body>
   <header>
     <!-- This part is for the navigation bar-->
     <nav>
+      <nav class="burger-menu ">
+        <ul>
+          <li>
+            <a href="#FAQ" class="minimal-anchors">الأسئلة المتكررة
+            </a>
+          </li>
+          <li>
+            <a href="#contactUs" class="minimal-anchors">التواصل معنا</a>
+          </li>
+          <li>
+            <a href="src/blogs.html" class="minimal-anchors greenButton">التدوينات</a>
+          </li>
+        </ul>
+      </nav>
       <div class="left-nav-side">
         <ul>
           <li>
@@ -31,9 +47,15 @@
             </a>
           </li>
           <li>
-            <a href="#" class="minimal-anchors">مشروع طيور</a>
+            <a href="#" class="minimal-anchors">طيور تطوير الألعاب</a>
           </li>
         </ul>
+      </div>
+
+      <div class="burger-menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <div class="right-nav-side">
         <ul>
@@ -49,6 +71,7 @@
           </li>
         </ul>
       </div>
+
     </nav>
     <!-- THis part is for the introduction title -->
     <div class="welcome-title-container">
@@ -57,7 +80,7 @@
         <h1 class="slide-top">
           المدونة الإلكترونية لتطوير الألعاب التي طالما انتظرتها.
         </h1>
-        <h2 class="slide-top">كتبت بطريقة صديقة للمبتدئين</h2>
+        <h2 class="slide-top">كتبت بأسلوب سهل ومناسب للمبتدئين.</h2>
         <button class="greenButton slide-top CTA"><a href="src/blogs.html"
             class="minimal-anchors">التدوينات</a></button>
       </div>
@@ -72,7 +95,7 @@
           <img src="assets/Icons-and-backgrounds/emoji-happy.svg" alt="free" />
           <h1>مَجّانيّ</h1>
           <p>
-            مشروع طيور يطمح لتوفير محتوى تعليمي لتطوير الألعاب بشكل مجاني
+            نحن نطمح لتوفير محتوى تعليمي لتطوير الألعاب بشكل مجاني
             للجميع .
           </p>
         </div>
@@ -83,17 +106,17 @@
         </div>
         <div class="showcase-card">
           <img src="assets/Icons-and-backgrounds/github.svg" alt="collaboration" />
-          <h1>تَعاوَنَ</h1>
+          <h1>مَفتوح المَصْدَر</h1>
           <p>
             المشروع يطمح ليكون مدونة لمشاركة المعرفة عن مجال تطوير الألعاب
             باللغة العربية .
           </p>
         </div>
         <div class="showcase-card">
-          <img src="assets/Icons-and-backgrounds/users.svg" alt="community" />
-          <h1>جَماعيّ</h1>
+          <img src="assets/Icons-and-backgrounds/hourglass.svg" alt="community" />
+          <h1>بَطِيء</h1>
           <p>
-            جمع وتوحيد مطورين الألعاب مع بعضهم البعض لمساعدة المطور العربي .
+            نأخذ وقتنا في كتابة كل منشور لضمان تقديم محتوى عالي الجودة يتناسب مع الوقت .
           </p>
         </div>
       </div>
@@ -102,27 +125,30 @@
     <section class="text-content" id="FAQ">
       <h1 class="center">الأسئِلَةُ المُتَكَرِّرَةُ</h1>
       <details class="accordion">
-        <summary>ما هو مشروع طيور ؟</summary>
-        <p>
-          مشروع طيور هو عبارة عن منصة جماعية مجانية عبر الإنترنت تهدف إلى
-          مشاركة المعرفة المتعلقة بتطوير الألعاب وترجمتها وتدوينها ومشاركة
-          الموارد المجانية ليتعلمها مطورو الألعاب
+        <summary>ما هو مشروع طيور تطوير الألعاب ؟</summary>
+        <p>"طيور تطوير الألعاب " هي منصة ننشر فيها مدونات حول جوانب مختلفة من تطوير الألعاب. مهمة المشروع هو إنشاء مادة
+          مفيدة وسهلة
+          الوصول لمطوري الألعاب الطموحين. نحن سنكتب عن تجاربنا وتحدياتنا وحلولنا لمساعدة الآخرين على التنقل في هذا
+          المجال المعقد
+          لإنشاء الألعاب.
         </p>
       </details>
       <details class="accordion">
-        <summary>من الفئة المستهدفة في مشروع طيور ؟</summary>
+        <summary>من الفئة المستهدفة في طيور تطوير الألعاب ؟</summary>
         <p>
-          مطورو الإلعاب العرب الذين يودون بتطوير مهاراتهم في المجال , خاصةً
-          الجدد
+          مطوِّرو الألعاب العرب الذين يرغبون في تطوير مهاراتهم في المجال، خاصةً الجدد.
         </p>
       </details>
       <details class="accordion">
         <summary>كيف يمكنني المساهمة في تحسين محتوى مشروع طيور ؟</summary>
         <p>
-          يمكنك كتابة مدونات ومشاركتها على المدونة تحت اسمك ,نحن نقدم مميزات
-          للكتاب الجدد, أين ؟ إما عن طريق Github أو عن طريق مشاركة ملف على
-          google docs , أيضاً بإمكانك المساهمة عن طريق مشاركة المدونة على منصة
-          إكس أو فيسبوك أو يوتيوب أو ما شابه
+          يمكنك المساهمة من خلال مشاركة المدونة مع الآخرين لزيادة عدد المتابعين.
+
+          نأمل أيضًا أن تصبح المدونة في المستقبل منصة مفتوحة للمدونين , حيث يمكنهم تقديم أفكار جديدة لتحسين وزيادة
+          المحتوى المتاح
+          ولكن في الوقت الحالي , لسنا جاهزين لذلك بعد , ننصحك بالتوجه إلى منصة كينماتيك في حال كنت ترغب في المشاركة في
+          الكتابة أو
+          حتى الكتابة على مدونات أخرى , هذا المشروع لا يزال قيد التطوير و عليه تخطي المعيقات المعروفة .
         </p>
       </details>
       <details class="accordion">
@@ -131,15 +157,26 @@
           كينماتيك ؟
         </summary>
         <p>
-          لا, مشروع طيور باختصار منصة تجميع وتدوين وترجمة محتوى تعليمي بهدف
-          مشاركة العلم .
+          المدونة قد لا تصل إلى تلك المرحلة في الوقت الحالي، وربما لن نخطط لذلك في المستقبل.
+          <br>
+          تم تصميم المدونة لتلائم نمط الحياة غير المستقر، مما يعني أنه لن يكون هناك التزامات ثابتة على المدونين أو
+          توقعات من
+          المتابعين بوجود تدوينات جديدة بشكل يومي أو أسبوعي. على الأقل، هذا ما ستكون عليه الأمور في البداية.
+          <br>
+          يمكن القول إننا نطمح حاليًا لأن تصبح المدونة شيئًا مشابهًا لمنصة كينماتيك، ولكن موجهة للأشخاص الذين يعيشون نمط
+          حياة غير
+          مستقر، خاصة في مناطق مثل بلاد الشام.
+          <br>
+          في المرحلة الأولى، ستكون مدونة "طيور تطوير الألعاب" مقتصرة على مقالات يكتبها أعضاء فريق استوديو
+          <b>Optimists</b> فقط،
+          نظرًا
+          لضيق الوقت المتاح. في النهاية، هذا عمل تطوعي ونحن فريق من فلسطين نهوى تطوير الألعاب.
         </p>
       </details>
       <details class="accordion">
         <summary>مجاني ! , ما هي الخدعة هنا ؟</summary>
-        <p>
-          الأمر بسيط , مشاركة المعرفة , أنا أشارك , انت القارئ تستفيد , أنت
-          تشارك , نحن القراء نستفيد . ･ᴗ･
+        <p>نحن لسنا بخبراء أو حتى بمعلمين ولا نزال هواة , سننشر ما لدينا من معرفة, أي أن المحتوى قد تراه متواضع , لا
+          ندري أنت الحكم
         </p>
       </details>
     </section>
@@ -148,10 +185,10 @@
       <h1 class="center">التَّوَاصُلُ مَعَنا</h1>
       <div class="flexDiv">
         <div class="narrowTextBox">
-          <h1>للتواصل مع إدارة مشروع طيور</h1>
+          <h1>للتواصل مع إدارة طيور تطوير الألعاب</h1>
           <p>
             يمكنك إرسال بريد إلكتروني إلى ali.al.khuwaja@gmail.com أو إرسال
-            رسالة على ديسكورد , أنا متواجد على سيرفر SGN بإسم Ali El-Khawaja
+            رسالة على ديسكورد في الخادم الخاص في طيور تطوير الألعاب
           </p>
         </div>
         <img src="assets/Icons-and-backgrounds/chat-3-fill-contact.svg" alt="التواصل مع مشروع طيور " height="200px"
@@ -170,6 +207,9 @@
       </li>
       <li>
         <a href="src/attributionPage.html" class="minimal-anchors">صفحة الاسناد</a>
+      </li>
+      <li>
+        <a href="https://discord.gg/R4trGWW22H" class="minimal-anchors">ديسكورد</a>
       </li>
     </ul>
     <br />
