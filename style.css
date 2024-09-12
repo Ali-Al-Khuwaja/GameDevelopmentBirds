@@ -162,10 +162,6 @@ ul {
     padding-right: 25px !important;
   }
 
-  /* .left-nav-side>ul>li:nth-child(2) {
-    display: none;
-    visibility: hidden;
-  } */
   .right-nav-side {
     display: none;
     visibility: hidden;
@@ -462,6 +458,8 @@ footer {
   background-color: var(--bg-black);
   padding: 20px;
   z-index: 2;
+  width: 100%;
+  border-bottom: var(--black-line) 1px solid;
 }
 
 .burger-menu ul {
