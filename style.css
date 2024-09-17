@@ -108,7 +108,7 @@ button:hover,
 
 .CTA {
   cursor: pointer;
-  font-weight: 550 !important;
+  font-weight: 700 !important;
 }
 
 /* navigation bar css */
@@ -331,8 +331,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-left: max(3rem, 15%);
-  margin-right: max(3rem, 15%);
+  margin-left: max(3rem, 10%);
+  margin-right: max(3rem, 10%);
   line-height: 2rem;
 }
 
