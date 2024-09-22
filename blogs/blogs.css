@@ -59,8 +59,8 @@
   }
 
   article {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
@@ -85,7 +85,7 @@ button:hover,
 
 /* custom css */
 iframe {
-  border-radius: 13px;
+  border-radius: 5px;
 }
 
 p {
