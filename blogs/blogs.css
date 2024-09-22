@@ -254,6 +254,10 @@ img {
   border-radius: 13px;
 }
 
+video {
+  border-radius: 10px;
+}
+
 .cardLogo {
   grid-column: 1/2;
   grid-row: 1/4;
